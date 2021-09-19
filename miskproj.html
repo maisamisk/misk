@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/197d1cb87f.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
+    <script>$(window).scroll(function() {
+    if ($(this).scrollTop()) {
+        $('#toTop').fadeIn();
+    } else {
+        $('#toTop').fadeOut();
+    }
+});
+
+$("#toTop").click(function () {
+   //1 second of animation time
+   //html works for FFX but not Chrome
+   //body works for Chrome but not FFX
+   //This strange selector seems to work universally
+   $("html, body").animate({scrollTop: 0}, 1000);
+});</script>
+    <style>
+        body {
+            font-family: cursive;
+        }
+
+        .logoimg {
+            width: 120px;
+            height: 120px;
+        }
+
+        .horzline {
+            margin-top: 0;
+
+            border: 1px solid gray;
+            opacity: 0.3;
+        }
+
+
+        #navbarContent a {
+            font-size: 20px;
+            font-weight: 800;
+            color: #c2749f;
+        }
+
+
+        #navbartow a {
+            margin: 20px;
+
+            font-size: 17px;
+            font-weight: 300;
+            color: black;
+        }
+
+
+        .imgheader {
+
+            width: 500px;
+            height: 500px;
+
+        }
+
+
+
+        #parheader {
+            background-color: #e0b8cf;
+            text-align: center;
+            padding-top: 150px;
+
+        }
+
+
+
+
+        .heading1 a {
+            font-size: 17px;
+            font-weight: 300;
+            color: black;
+        }
+
+        .bg {
+            background-image: url(img/Capture1.PNG);
+            background-size: cover;
+            width: 300px;
+
+        }
+
+
+
+
+        .num span {
+            color: gray;
+        }
+
+        #buts {
+            background-color: #c2749f;
+            margin-left: 150px;
+            border: none;
+            color: white;
+        }
+
+        .read a,
+        i {
+
+            font-size: 20px;
+            font-weight: 800;
+            color: #c2749f;
+        }
+
+        #footerde {
+            list-style: none;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #e0b8cf;
+        }
+
+        footer ul {
+            margin: 20px;
+        }
+
+        #footerde i {
+            color: gray;
+            margin: 5px;
+
+        }
+  
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+
+            <img class="logoimg" src="img/logomisk.PNG">
+
+
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Home</a></li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">LogIn</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Help
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Language
+                        </a>
+                    </li>
+
+
+                </ul>
+
+
+            </div>
+
+        </div>
+
+    </nav>
+    <hr class="horzline">
+    <nav class="navbar2 navbar-expand-lg navbar-light">
+        <div class="container">
+
+            <div class="collapsenav navbar-collapse" id="navbartow">
+                <ul class="navbar-nav">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#new">NEW ARRIVALS</a></li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#make">MAKEUP</a></li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#nail">NAILS</a></li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#skin">SKIN CARE</a></li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#hair">HAIR</a></li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#tool">TOOLS & BRUSHES</a></li>
+
+
+                </ul>
+
+
+            </div>
+
+        </div>
+
+    </nav>
+    <hr class="horzline">
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <img class="imgheader " src="img/miskheader.jpg">
+                </div>
+
+                <div class="col-lg-6 text-align-center" id="parheader">
+                    <h1>WHAT'S A NEW</h1>
+                    <p>
+                        Here's the latest makeup and everything you need to take care of yourself</p>
+                    <form>
+                        <input type="button" class="button btn btn-dark py-3 px-5 text-white" value="Shop Now">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="picturs text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <div class="bg">
+                <h2 class="sec1 mt-5 mb-5 ml-3" id="new">NEW ARRIVALS</h2>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6 col-lg-4 mb-5">
+
+                    <img class="img-fluid" src="img/newarr1.jpg" alt="" />
+                    <div class="text">
+                        <h2 class="heading1"><a href="#">BRIOGEO:
+                                Don't Despair, Repair! Deep Conditioning Hair Mask</a></h2>
+                        <div class="meta d-flex align-items-center">
+                            <div class="num ml-4">
+                                <span>£8.50</span>
+                            </div>
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="buts">BUY</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <img class="img-fluid" src="img/newarr2.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">
+                                BRIOGEO:
+                                Farewell Frizz Blow Dry Perfection & Heat Protectant Cream</a></h2>
+                        <div class="meta d-flex align-items-center">
+                            <div class="num ml-4">
+                                <span>£21.50</span>
+                            </div>
+                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="buts">BUY</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <img class="img-fluid" src="img/newarr3.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">
+                                BRIOGEO:
+                                Farewell Frizz Rosarco Milk Leave-In Conditioner</a></h2>
+                        <div class="meta d-flex align-items-center">
+                            <div class="num ml-4">
+                                <span>£8.50</span>
+                            </div>
+                            <button class="btn btn-outline-success my-2 my-sm-0 " type="submit" id="buts">BUY</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5 ">
+                    <img class="img-fluid" src="img/newarr4.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">TOM FORD<br>
+                                Rose Prick
+                            </a></h2>
+                        <div class="meta d-flex align-items-center">
+                            <div class="num ml-4">
+                                <span>$335</span>
+                            </div>
+                            <button class="btn btn-outline-success my-2 my-sm-0 " type="submit" id="buts">BUY</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5 ">
+                    <img class="img-fluid" src="img/newarr5.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">JO MALONE LONDON
+                                Nectarine Blossom & Honey Cologne Pen
+                            </a></h2>
+                        <div class="meta d-flex align-items-center">
+                            <div class="num ml-4">
+                                <span>$36</span>
+                            </div>
+                            <button class="btn btn-outline-success my-2 my-sm-0 " type="submit" id="buts">BUY</button>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <img class="img-fluid" src="img/newarr6.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">SOL DE JANEIRO
+                                Cheirosa <br>'62 Candle
+                            </a></h2>
+                        <div class="meta d-flex align-items-center">
+                            <div class="num ml-4">
+                                <span>$42</span>
+                            </div>
+                            <button class="btn btn-outline-success my-2 my-sm-0 " type="submit" id="buts">BUY</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="makeup text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <div class="bg">
+                <h2 class="sec1 mt-5 mb-5 ml-3" id="make">MAKE UP</h2>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6 col-lg-3 mb-5">
+
+                    <img class="img-fluid" src="img/shad1.jpg" alt="" />
+                    <div class="text">
+                        <h2 class="heading1"><a href="#">NATASHA DENONA<br>
+                                Bronze Palette
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$65</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/shad2.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">
+                                JEFFREE STAR COSMETICS<br>
+                                Blood Lust Palette
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$54</span>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+
+                    <img class="img-fluid" src="img/shad3.jpg" alt="" />
+                    <div class="text">
+                        <h2 class="heading1"><a href="#">JEFFREE STAR COSMETICS<br>
+                                Blue Blood Eyeshadow Palette
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$52</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/shad4.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">VISEART<br>
+                                Paris EDIT Eye Shadow Palette
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$39</span>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/shad5.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">CHARLOTTE TILBURY<br>
+                                Airbrush Flawless Foundation
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$44</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/shad6.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">CHARLOTTE TILBURY<br>
+                                Magic Foundation
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$44</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/shad7.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">ANASTASIA BEVERLY HILLS<br>
+                                Lash Brag Volumizing Mascara
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$25</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/shad8.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">CHARLOTTE TILBURY<br>
+                                Legendary Lashes Volume 2
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$32</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/shad9.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">JOUER COSMETICS<br>
+                                Blush Bouquet Mini
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$18</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/shad10.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">HOURGLASS<br>
+                                Ambient Lighting Blush
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$40</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/shad11.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">HOURGLASS<br>
+                                Ambient Strobe Lighting Blush
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$40</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/shad12.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">RCMA MAKEUP<br>
+                                Cream Cheek Color Palette
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$30</span>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p><a href="#" class="read"> More <i class="far fa-arrow-alt-circle-right"></i></a></p>
+    </section>
+    <section class="nail text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <div class="bg">
+                <h2 class="sec1 mt-5 mb-5 ml-3" id="nail">NAILS</h2>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6 col-lg-3 mb-5">
+
+                    <img class="img-fluid" src="img/nail1.jpg" alt="" />
+                    <div class="text">
+                        <h2 class="heading1"><a href="#">INGLOT COSMETICS<br>
+                                O2M Breathable Nail Enamel
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$17</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/nail2.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">
+                                SMITH & CULT<br>
+                                Nailed Lacquer Trio
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$50</span>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+
+                    <img class="img-fluid" src="img/nail3.jpg" alt="" />
+                    <div class="text">
+                        <h2 class="heading1"><a href="#">TOM FORD<br>
+                                Fucking Fabulous Nail Lacquer
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$40</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/nail4.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">ANNA SUI<br>
+                                Nail Color C
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$15</span>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/nail5.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">TWEEZERMAN<br>
+                                Rockhard Cuticle Nipper
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$26</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/nail6.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">SECHE<br>
+                                Restore Thinner
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$7</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/nail7.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">TWEEZERMAN<br>
+                                Precision Grip Toenail Clipper
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$14</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/nail8.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">SMITH & CULT<br>
+                                Basis of Everything Base Coat
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$18</span>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p><a href="#" class="read"> More <i class="far fa-arrow-alt-circle-right"></i></a></p>
+    </section>
+    <section class="skin text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <div class="bg">
+                <h2 class="sec1 mt-5 mb-5 ml-3" id="skin">SKINCARE</h2>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6 col-lg-3 mb-5">
+
+                    <img class="img-fluid" src="img/skin1.jpg" alt="" />
+                    <div class="text">
+                        <h2 class="heading1"><a href="#">
+                                BIODERMA<br>
+                                Atoderm PP Balm
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$22</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/skin2.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">
+                                SAINT JANE BEAUTY<br>
+                                Luxury Body Serum
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$58</span>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+
+                    <img class="img-fluid" src="img/skin3.jpg" alt="" />
+                    <div class="text">
+                        <h2 class="heading1"><a href="#">DR. BARBARA STURM<br>
+                                Baby & Kids Baby Bum Cream
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$35</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/skin4.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">CHARLOTTE TILBURY<br>
+                                Supermodel Body
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$85</span>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/skin5.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">BOSCIA<br>
+                                Konjac Cleansing Sponge
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$15</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/skin6.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">MILA MOURSI<br>
+                                Complexion Brush
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$39</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/skin7.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">REFA<br>
+
+                                ReFa S CARAT
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$160</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/skin8.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">THE SACRED RITUAL<br>
+                                Clear Quartz Facial Roller
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$32</span>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p><a href="#" class="read"> More <i class="far fa-arrow-alt-circle-right"></i></a></p>
+    </section>
+    <section class="hair text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <div class="bg">
+                <h2 class="sec1 mt-5 mb-5 ml-3" id="hair">HAIR</h2>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6 col-lg-3 mb-5">
+
+                    <img class="img-fluid" src="img/hair1.jpg" alt="" />
+                    <div class="text">
+                        <h2 class="heading1"><a href="#">BRIOGEO<br>
+                                Don't Despair, Repair! Strengthening Treatment Oil
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$30</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/hair2.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">
+                                THE ORDINARY<br>
+                                Multi-Peptide Serum for Hair Density
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$18</span>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+
+                    <img class="img-fluid" src="img/hair3.jpg" alt="" />
+                    <div class="text">
+                        <h2 class="heading1"><a href="#">
+                                BUMBLE AND BUMBLE<br>
+                                Repair Blow Dry
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$32</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/hair4.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">BUMBLE AND BUMBLE<br>
+                                While You Sleep
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$43</span>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/hair5.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">ANNA SUI<br>
+                                Hair Brush
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$38</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/hair6.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">T3<br>
+                                SinglePass Luxe
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$180</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/hair7.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">T3<br>
+                                Volume 3.0 Round Brush
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$40</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/hair8.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">T3<br>
+
+                                Cura Hair Dryer
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$235</span>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p><a href="#" class="read"> More <i class="far fa-arrow-alt-circle-right"></i></a></p>
+    </section>
+    <section class="tool text-center">
+        <div class="container d-flex align-items-center flex-column">
+            <div class="bg">
+                <h2 class="sec1 mt-5 mb-5 ml-3" id="tool">TOOLS & BRUSHES</h2>
+            </div>
+            <div class="row mt-5">
+                <div class="col-md-6 col-lg-3 mb-5">
+
+                    <img class="img-fluid" src="img/tool1.jpg" alt="" />
+                    <div class="text">
+                        <h2 class="heading1"><a href="#">
+                                BEAUTYBLENDER<br>
+                                beautyblender single
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$20</span>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/tool2.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">
+                                BEAUTYBLENDER<br>
+                                two.bb.clean
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$45</span>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+
+                    <img class="img-fluid" src="img/tool3.jpg" alt="" />
+                    <div class="text">
+                        <h2 class="heading1"><a href="#">
+
+                                BRUSH WORKS<br>
+                                Artist Easel Pro
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$65</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/tool4.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">
+                                ANNA SUI<br>
+                                Hand Mirror
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$25</span>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/tool5.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">SONIA G.<br>
+                                Pro Face Set
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$270</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/tool6.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">
+                                WAYNE GOSS<br>
+                                The Anniversary Set Volume 2
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$240</span>
+                        </div>
+
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/tool7.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">RAE MORRIS<br>
+                                Signature Kabuki Set
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$381</span>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 mb-5">
+                    <img class="img-fluid" src="img/tool8.jpg" alt="" />
+                    <div class="desc">
+                        <h2 class="heading1"><a href="#">CHIKUHODO<br>
+                                The Sakura Makie Travel Set by Chikuhodo x Beautylish
+
+                            </a></h2>
+
+                        <div class="num ml-4 d-flex align-items-center">
+                            <span>$155</span>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p><a href="#" class="read"> More <i class="far fa-arrow-alt-circle-right"></i></a></p>
+    </section>
+    <footer>
+        <div class="container d-flex align-items-center flex-column">
+            <div class="row mt-5">
+                <div class="col-md-6 col-lg-4 mb-5">
+
+                    <ul class="footer_list" id="footerde">
+                        <h2 class="footer_title">
+                            Brands
+                        </h2>
+
+
+                        <li><a class="navLink" href="#">Benefit Cosmetics</a></li>
+                        <li><a class="navLink" href="#">Charlotte Tilbury</a></li>
+                        <li><a class="navLink" href="#">Good Molecules</a></li>
+                        <li><a class="navLink" href="#">Hourglass</a></li>
+                        <li><a class="navLink" href="#">Jeffree Star Cosmetics</a></li>
+                        <li><a class="navLink" href="#">Natasha Denona</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <ul class="footer_list" id="footerde">
+
+                        <h2 class="footer_title">
+                            Follow
+                        </h2>
+
+                        <li>
+                            <a href="#"><i class="fas fa-mobile-alt"></i>iPhone</a>
+                        </li>
+                        <li><a href="#"><i class="fab fa-facebook-square"></i>Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-snapchat"></i>Snapchat</a></li>
+
+                    </ul>
+                </div>
+                <div class="col-md-6 col-lg-4 mb-5">
+                    <ul class="footer_list" id="footerde">
+                        <h2 class="footer_title">
+                            About
+                        </h2>
+
+                        <li>
+                            <a class="navLink" href="/about">About</a>
+                        </li>
+                        <li>
+                            <a class="navLink" href="/community">Community</a>
+                        </li>
+                        <li>
+                            <a class="navLink" href="/jobs">Jobs</a>
+                        </li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">1-877-992-5474</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id='toTop'><a href="#"><i class="fas fa-rocket"></i></a></div>
+    </footer>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
